@@ -65,12 +65,13 @@ const ChatGpt = () => {
 
     const embeddingOptions = [
         {
-          key: 'azureopenai',
-          text: 'Azure Open AI'
+          key: 'openai',
+          text: 'Open AI'        
+
         },
         {
-          key: 'openai',
-          text: 'Open AI'
+          key: 'azureopenai',
+          text: 'Azure Open AI'
         }
         // {
         //   key: 'local',
