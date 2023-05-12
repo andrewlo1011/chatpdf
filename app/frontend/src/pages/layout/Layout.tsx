@@ -67,25 +67,6 @@ const Layout = () => {
                                     Ask a question
                                 </NavLink>
                             </li>
-                            <li className={styles.headerNavLeftMargin}>
-                                <NavLink to="/sql" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                    Sql NLP
-                                </NavLink>
-                            </li>
-                            { showSpeech && (
-                                <li className={styles.headerNavLeftMargin}>
-                                    <NavLink to="/speech" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                        Speech Analytics
-                                    </NavLink>
-                                 </li>
-                            )}
-                            {showEdgar && (
-                                 <li className={styles.headerNavLeftMargin}>
-                                 <NavLink to="/edgar" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
-                                     Edgar Analysis
-                                 </NavLink>
-                             </li>
-                            )}
                             {showAdmin && (
                                  <li className={styles.headerNavLeftMargin}>
                                  <NavLink to="/admin" className={({ isActive }) => (isActive ? styles.headerNavPageLinkActive : styles.headerNavPageLink)}>
@@ -133,20 +114,6 @@ const Layout = () => {
                     checked={showUpload}
                     label="Show Upload Capability"
                     onChange={onShowUpload}
-                />
-                <br/>
-                <Checkbox
-                    className={styles.chatSettingsSeparator}
-                    checked={showEdgar}
-                    label="Display Edgar Analysis"
-                    onChange={onShowEdgar}
-                />
-                <br/>
-                <Checkbox
-                    className={styles.chatSettingsSeparator}
-                    checked={showSpeech}
-                    label="Display Speech Analytics"
-                    onChange={onShowSpeech}
                 />
                 <br/>
                 <Checkbox
